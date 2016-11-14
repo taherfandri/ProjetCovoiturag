@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Image2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Numéro du voyage"
+        android:id="@+id/textView24"
+        android:layout_marginTop="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText14"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/button10"
+        android:layout_toRightOf="@+id/button10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:id="@+id/button10"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="#485798"
+        android:textColor="#ffffff" />
+
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre commentaire"
+        android:id="@+id/extractEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText14"
+        android:layout_alignEnd="@+id/editText14"
+        android:layout_above="@+id/button10"
+        android:layout_below="@+id/textView24" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:layout_below="@+id/textView24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Image2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ville de départ"
+        android:id="@+id/textView13"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ville d&apos;arrivée"
+        android:id="@+id/textView14"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date de départ"
+        android:id="@+id/textView15"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Heure de depart"
+        android:id="@+id/textView16"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:textColor="#ffffff" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignRight="@+id/datePicker"
+        android:layout_alignEnd="@+id/datePicker" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulter les offres"
+        android:id="@+id/BtnConsulter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="#485a9a"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tunis"
+        android:id="@+id/ACVilleDepart"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignRight="@+id/datePicker"
+        android:layout_alignEnd="@+id/datePicker"
+        android:layout_toRightOf="@+id/BtnConsulter"
+        android:layout_toEndOf="@+id/BtnConsulter" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sousse"
+        android:id="@+id/AtVilleArrivee"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignRight="@+id/ACVilleDepart"
+        android:layout_alignEnd="@+id/ACVilleDepart"
+        android:layout_alignLeft="@+id/ACVilleDepart"
+        android:layout_alignStart="@+id/ACVilleDepart" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Image2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Profil de "
+        android:id="@+id/textView21"
+        android:layout_marginTop="53dp"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telephone"
+        android:id="@+id/textView22"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView21"
+        android:layout_alignEnd="@+id/textView21"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="E-Mail"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView22"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_marginTop="35dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/TvTelephone"
+        android:layout_above="@+id/textView23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/TvEmail"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignRight="@+id/TvTelephone"
+        android:layout_alignEnd="@+id/TvTelephone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/TvNomProfil"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignRight="@+id/ratingBar"
+        android:layout_alignEnd="@+id/ratingBar" />
+
+</RelativeLayout>

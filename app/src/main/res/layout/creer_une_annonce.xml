@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Image2">
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/searchView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="101dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Marque"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/searchView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Modele"
+        android:id="@+id/textView10"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre de places"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Climatisation"
+        android:id="@+id/CbClimatisation"
+        android:layout_below="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_marginTop="49dp"
+        android:checked="false"
+        android:textColor="#4eaaff"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        android:id="@+id/CbGPS"
+        android:layout_below="@+id/CbClimatisation"
+        android:layout_alignLeft="@+id/CbClimatisation"
+        android:layout_alignStart="@+id/CbClimatisation"
+        android:checked="false"
+        android:textColor="#4eaaff"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIFI"
+        android:id="@+id/CbWifi"
+        android:layout_below="@+id/CbGPS"
+        android:layout_alignLeft="@+id/CbGPS"
+        android:layout_alignStart="@+id/CbGPS"
+        android:checked="false"
+        android:textColor="#4eaaff"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voiture par default"
+        android:id="@+id/CbVoitureParDefaut"
+        android:checked="false"
+        android:layout_below="@+id/CbWifi"
+        android:layout_alignLeft="@+id/CbWifi"
+        android:layout_alignStart="@+id/CbWifi"
+        android:textColor="#4eaaff"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:id="@+id/BtnValider"
+        android:background="#4052b5"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/CbVoitureParDefaut"
+        android:layout_alignLeft="@+id/CbVoitureParDefaut"
+        android:layout_alignStart="@+id/CbVoitureParDefaut"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EtMarque"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toRightOf="@+id/CbGPS"
+        android:layout_alignRight="@+id/CbVoitureParDefaut"
+        android:layout_alignEnd="@+id/CbVoitureParDefaut" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EtModele"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignRight="@+id/EtMarque"
+        android:layout_alignEnd="@+id/EtMarque"
+        android:layout_alignLeft="@+id/EtMarque"
+        android:layout_alignStart="@+id/EtMarque" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EtNbPlaces"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignLeft="@+id/EtModele"
+        android:layout_alignStart="@+id/EtModele"
+        android:layout_alignRight="@+id/CbVoitureParDefaut"
+        android:layout_alignEnd="@+id/CbVoitureParDefaut" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ajout d&apos;une offre"
+        android:id="@+id/textView12"
+        android:layout_above="@+id/textView9"
+        android:layout_alignRight="@+id/CbVoitureParDefaut"
+        android:layout_alignEnd="@+id/CbVoitureParDefaut"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
